@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect, useContext } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 import { Context } from "../store/appContext";
 
