@@ -13,7 +13,9 @@ const products = [
     image: "🍎",
     wa: "/img/WhatsAppNY.svg.png", // ✅ Use relative path
     price: 25,
-    stripePriceId: "price_1Q0AOfFOQNBOjDBoAfsHiP28",
+    stripePriceId:
+      // "price_1Q0AOfFOQNBOjDBoAfsHiP28",
+      "price_1Q0RCcFOQNBOjDBok9tLKmc3",
   },
   {
     id: 2,
@@ -21,7 +23,8 @@ const products = [
     image: "🎥",
     wa: "/img/WhatsAppLA.svg.png", // ✅ Use relative path
     price: 25,
-    stripePriceId: "price_1Q0AUyFOQNBOjDBoLQShBVIX",
+    stripePriceId: "price_1Q0REKFOQNBOjDBoARzVNljt",
+    // "price_1Q0AUyFOQNBOjDBoLQShBVIX",
   },
   {
     id: 3,
@@ -29,7 +32,9 @@ const products = [
     image: "🌴",
     wa: "/img/WhatsAppMI.svg.png", // ✅ Use relative path
     price: 25,
-    stripePriceId: "price_1Q0ASpFOQNBOjDBoXfBS7u3U",
+    stripePriceId:
+      // "price_1Q0ASpFOQNBOjDBoXfBS7u3U",
+      "price_1Q0RDVFOQNBOjDBo0S4Eh7RY",
   },
 ];
 

@@ -108,9 +108,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$serv
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$stripe$2f$esm$2f$stripe$2e$esm$2e$node$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/stripe/esm/stripe.esm.node.js [app-route] (ecmascript)");
 ;
 ;
-// Load Stripe Secret Key from environment variables
 const stripe = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$stripe$2f$esm$2f$stripe$2e$esm$2e$node$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"](process.env.STRIPE_SECRET_KEY);
 const YOUR_DOMAIN = ("TURBOPACK compile-time value", "http://localhost:3000") || "http://localhost:3000";
+console.log("Stripe Secret Key:", process.env.STRIPE_SECRET_KEY ? "Loaded" : "Not Found");
 async function POST(req) {
     try {
         console.log("Received request to /api/checkout");
@@ -123,7 +123,6 @@ async function POST(req) {
                 status: 400
             });
         }
-        // Convert cart items into Stripe's line item format
         const lineItems = cart.map((item)=>({
                 price: item.stripePriceId,
                 quantity: 1
