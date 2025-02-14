@@ -4,11 +4,6 @@ import Stripe from "stripe";
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 const YOUR_DOMAIN = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 
-console.log(
-  "Stripe Secret Key:",
-  process.env.STRIPE_SECRET_KEY ? "Loaded" : "Not Found"
-);
-
 export async function POST(req) {
   try {
     console.log("Received request to /api/checkout");
