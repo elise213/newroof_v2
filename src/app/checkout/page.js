@@ -123,7 +123,7 @@ const Checkout = () => {
           {isChecked ? (
             <button
               className="addToCart"
-              style={{ borderRadius: "4px", margin: "15px 0" }}
+              style={{ borderRadius: "4px", margin: "13px 0" }}
               onClick={handleCheckout}
             >
               Proceed to Payment

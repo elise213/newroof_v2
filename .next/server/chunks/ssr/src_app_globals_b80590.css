@@ -163,6 +163,27 @@ a {
   position: relative;
 }
 
+.pulse-cart {
+  animation: 1.5s ease-in-out infinite pulseCart;
+}
+
+@keyframes pulseCart {
+  0% {
+    transform: scale(1);
+    text-shadow: 0 0 5px #0000004d;
+  }
+
+  50% {
+    transform: scale(1.2);
+    text-shadow: 10px 10px 30px #000c;
+  }
+
+  100% {
+    transform: scale(1);
+    text-shadow: 0 0 5px #0000004d;
+  }
+}
+
 .cart-number {
   font-size: 20px;
   top: 0;
@@ -210,9 +231,15 @@ a {
   margin: 0;
 }
 
+.group-div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -20px;
+}
+
 .city-image {
   font-size: 40px;
-  margin: 0 0 -20px 10px;
+  margin: 0 0 -20px -15px;
   padding: 5px;
 }
 
@@ -267,19 +294,37 @@ a {
   box-sizing: border-box;
   border: 1px solid #8b4513;
   align-self: center;
-  padding: 2px;
+  padding: 3px;
   color: #8b4513;
   width: unset;
   justify-self: flex-start;
   align-self: flex-end;
-  padding: 4px;
-  margin: -10px 5px 5px;
+  margin: -10px 3px 3px;
   font-family: Neutraface Text;
+  transition: background-color 1s, transform .3s ease-in-out;
+  animation: 2s ease-in-out infinite pulse;
 }
 
 .addToCart:hover {
   background-color: #cbc2d8;
-  transition: all 1s;
+  transition: background-color 1s, transform .3s ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 5px #8b451333;
+  }
+
+  50% {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px #8b45134d;
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 5px #8b451333;
+  }
 }
 
 .productPrice {
@@ -295,10 +340,6 @@ a {
 .home-group {
   display: flex;
   flex-direction: column;
-}
-
-.group-div {
-  display: flex;
 }
 
 .remove {
@@ -347,7 +388,8 @@ a {
   color: #6e878f;
   justify-self: flex-end;
   align-self: flex-end;
-  margin: 5px;
+  padding: 3px;
+  margin-top: -5px;
 }
 
 .cartDiv {
@@ -407,6 +449,7 @@ a {
 
 .product-card-text {
   width: 100px;
+  font-weight: 500;
   font-size: 18px;
   font-family: Neutraface Text;
   padding: 10px 0;
@@ -441,8 +484,8 @@ a {
 }
 
 .terms_checkbox:checked {
-  background-color: #007bff;
-  border-color: #0056b3;
+  background-color: #c6ffbb;
+  border-color: #8b4513;
 }
 
 .terms_checkbox:checked:after {
@@ -636,6 +679,10 @@ a {
   .product {
     margin: 5px;
   }
+}
+
+.footer {
+  gap: 15px;
 }
 
 @media (prefers-color-scheme: dark) {

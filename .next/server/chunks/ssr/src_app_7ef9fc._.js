@@ -140,7 +140,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$ico
 ;
 ;
 // Load Stripe (Uses Next.js Env Variable)
-const stripePromise = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$stripe$2f$stripe$2d$js$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["loadStripe"])(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY);
+const stripePromise = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$stripe$2f$stripe$2d$js$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["loadStripe"])(("TURBOPACK compile-time value", "pk_test_51Q08RhFOQNBOjDBo8HImbk1ZuAd8ZWE7SvF7QYIfJylSTqG3vxra9K6nFGepSPJFTPdQ9vztHlrHQzQGdt9riEm400FLh8m2IQ"));
 const Checkout = ()=>{
     const { store, actions } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useContext"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$store$2f$appContext$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Context"]);
     const [totalAmount, setTotalAmount] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(0);
@@ -161,7 +161,7 @@ const Checkout = ()=>{
             return;
         }
         try {
-            const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/create-checkout-session`, {
+            const response = await fetch(`${("TURBOPACK compile-time value", "http://localhost:3001")}/api/create-checkout-session`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -344,7 +344,7 @@ const Checkout = ()=>{
                         className: "addToCart",
                         style: {
                             borderRadius: "4px",
-                            margin: "15px 0"
+                            margin: "13px 0"
                         },
                         onClick: handleCheckout,
                         children: "Proceed to Payment"

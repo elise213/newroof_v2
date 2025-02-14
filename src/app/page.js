@@ -9,7 +9,7 @@ import Image from "next/image";
 const products = [
   {
     id: 1,
-    name: "New York",
+    name: "NEW YORK",
     image: "🍎",
     wa: "/img/WhatsAppNY.svg.png", // ✅ Use relative path
     price: 25,
@@ -17,7 +17,7 @@ const products = [
   },
   {
     id: 2,
-    name: "Los Angeles",
+    name: "LOS ANGELES",
     image: "🎥",
     wa: "/img/WhatsAppLA.svg.png", // ✅ Use relative path
     price: 25,
@@ -25,7 +25,7 @@ const products = [
   },
   {
     id: 3,
-    name: "Miami",
+    name: "MIAMI",
     image: "🌴",
     wa: "/img/WhatsAppMI.svg.png", // ✅ Use relative path
     price: 25,
@@ -41,13 +41,10 @@ export default function Home() {
       {/* Header */}
       <div className="cart">
         <span className="nav-title">RICKY'S HOMESHARING</span>
-        <div className="cartIcon">
-          <Link href="/checkout">
-            🛒
-            {/* {store.cart.length > 0 && (
-              <button className="go-to-cart">GO TO CART </button>
-            )} */}
-          </Link>
+        <div
+          className={`cartIcon ${store.cart.length > 0 ? "pulse-cart" : ""}`}
+        >
+          <Link href="/checkout">🛒</Link>
         </div>
       </div>
 
@@ -58,36 +55,25 @@ export default function Home() {
             <div className="home-group">
               <div className="card-top">
                 <span className="price">${product.price}</span>
-                <p className="one-year-text">Annual Subscription!</p>
+                <p className="one-year-text">One Year Subscription</p>
               </div>
+              <div className="product-text-div">
+                <p className="product-card-text">{product.name}</p>
+              </div>
+
               <div className="group-div">
                 <div className="city-image">{product.image}</div>
-                <div className="product-text-div">
-                  <p className="product-card-text">{product.name}</p>
-                  {/* <p className="product-card-text">
-                    Housing Group Subscription
-                  </p> */}
-                </div>
+                {store.cart.some((item) => item.id === product.id) ? (
+                  <span className="in-cart-text">* In your cart</span>
+                ) : (
+                  <button
+                    className="addToCart"
+                    onClick={() => actions.addToCart(product)}
+                  >
+                    Add to Cart
+                  </button>
+                )}
               </div>
-              {/* Display WhatsApp Image */}
-              {/* <Image
-                src={product.wa}
-                alt={`WhatsApp for ${product.name}`}
-                width={50}
-                height={50}
-              /> */}
-
-              {store.cart.some((item) => item.id === product.id) ? (
-                <span className="in-cart-text">* In your cart</span>
-              ) : (
-                <button
-                  className="addToCart"
-                  onClick={() => actions.addToCart(product)}
-                >
-                  {/* <span class="material-icons">add</span> */}
-                  Add to Cart
-                </button>
-              )}
             </div>
           </div>
         ))}
