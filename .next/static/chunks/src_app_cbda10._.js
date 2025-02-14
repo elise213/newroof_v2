@@ -153,7 +153,7 @@ const products = [
     },
     {
         id: 2,
-        name: "LOS ANGELES",
+        name: "LA",
         image: "🎥",
         wa: "/img/WhatsAppLA.svg.png",
         price: 25,

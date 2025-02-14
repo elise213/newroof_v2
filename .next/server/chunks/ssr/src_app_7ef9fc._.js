@@ -161,7 +161,7 @@ const Checkout = ()=>{
             return;
         }
         try {
-            const response = await fetch(`${("TURBOPACK compile-time value", "http://localhost:3001")}/api/create-checkout-session`, {
+            const response = await fetch("/api/checkout", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -199,19 +199,19 @@ const Checkout = ()=>{
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__["Button"], {
                     startIcon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$ArrowBackIos$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "[project]/src/app/checkout/page.js",
-                        lineNumber: 77,
+                        lineNumber: 74,
                         columnNumber: 28
                     }, void 0),
                     className: "backButton",
                     children: "Back to Shop"
                 }, void 0, false, {
                     fileName: "[project]/src/app/checkout/page.js",
-                    lineNumber: 77,
+                    lineNumber: 74,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/checkout/page.js",
-                lineNumber: 76,
+                lineNumber: 73,
                 columnNumber: 7
             }, this),
             store.cart.length > 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -228,7 +228,7 @@ const Checkout = ()=>{
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/checkout/page.js",
-                                        lineNumber: 87,
+                                        lineNumber: 84,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -241,7 +241,7 @@ const Checkout = ()=>{
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/checkout/page.js",
-                                                lineNumber: 89,
+                                                lineNumber: 86,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -251,24 +251,24 @@ const Checkout = ()=>{
                                                 children: "X"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/checkout/page.js",
-                                                lineNumber: 90,
+                                                lineNumber: 87,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/checkout/page.js",
-                                        lineNumber: 88,
+                                        lineNumber: 85,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, index, true, {
                                 fileName: "[project]/src/app/checkout/page.js",
-                                lineNumber: 86,
+                                lineNumber: 83,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/app/checkout/page.js",
-                        lineNumber: 84,
+                        lineNumber: 81,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -278,7 +278,7 @@ const Checkout = ()=>{
                                 children: " Billed Annually"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/checkout/page.js",
-                                lineNumber: 103,
+                                lineNumber: 100,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -289,13 +289,13 @@ const Checkout = ()=>{
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/checkout/page.js",
-                                lineNumber: 104,
+                                lineNumber: 101,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/checkout/page.js",
-                        lineNumber: 102,
+                        lineNumber: 99,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -311,7 +311,7 @@ const Checkout = ()=>{
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/src/app/checkout/page.js",
-                                lineNumber: 109,
+                                lineNumber: 106,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -324,33 +324,34 @@ const Checkout = ()=>{
                                         children: "rules and terms"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/checkout/page.js",
-                                        lineNumber: 118,
+                                        lineNumber: 115,
                                         columnNumber: 15
                                     }, this),
                                     " of the group. By checking this box, you are agreeing to these terms."
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/checkout/page.js",
-                                lineNumber: 116,
+                                lineNumber: 113,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/checkout/page.js",
-                        lineNumber: 108,
+                        lineNumber: 105,
                         columnNumber: 11
                     }, this),
                     isChecked ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         className: "addToCart",
                         style: {
                             borderRadius: "4px",
-                            margin: "13px 0"
+                            margin: "13px 0",
+                            alignSelf: "center"
                         },
                         onClick: handleCheckout,
                         children: "Proceed to Payment"
                     }, void 0, false, {
                         fileName: "[project]/src/app/checkout/page.js",
-                        lineNumber: 124,
+                        lineNumber: 121,
                         columnNumber: 13
                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         style: {
@@ -358,13 +359,13 @@ const Checkout = ()=>{
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/app/checkout/page.js",
-                        lineNumber: 132,
+                        lineNumber: 133,
                         columnNumber: 13
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/checkout/page.js",
-                lineNumber: 83,
+                lineNumber: 80,
                 columnNumber: 9
             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                 style: {
@@ -373,18 +374,18 @@ const Checkout = ()=>{
                 children: "Your cart is empty."
             }, void 0, false, {
                 fileName: "[project]/src/app/checkout/page.js",
-                lineNumber: 136,
+                lineNumber: 137,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$component$2f$footer$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Footer"], {}, void 0, false, {
                 fileName: "[project]/src/app/checkout/page.js",
-                lineNumber: 139,
+                lineNumber: 140,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/checkout/page.js",
-        lineNumber: 74,
+        lineNumber: 71,
         columnNumber: 5
     }, this);
 };

@@ -17,7 +17,7 @@ const products = [
   },
   {
     id: 2,
-    name: "LOS ANGELES",
+    name: "LA",
     image: "🎥",
     wa: "/img/WhatsAppLA.svg.png", // ✅ Use relative path
     price: 25,

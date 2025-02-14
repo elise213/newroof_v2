@@ -35,14 +35,11 @@ const Checkout = () => {
     }
 
     try {
-      const response = await fetch(
-        `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/create-checkout-session`,
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ cart: store.cart }),
-        }
-      );
+      const response = await fetch("/api/checkout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ cart: store.cart }),
+      });
 
       if (!response.ok) {
         const errorText = await response.text();
@@ -123,7 +120,11 @@ const Checkout = () => {
           {isChecked ? (
             <button
               className="addToCart"
-              style={{ borderRadius: "4px", margin: "13px 0" }}
+              style={{
+                borderRadius: "4px",
+                margin: "13px 0",
+                alignSelf: "center",
+              }}
               onClick={handleCheckout}
             >
               Proceed to Payment
