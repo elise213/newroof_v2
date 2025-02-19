@@ -139,6 +139,7 @@ a {
   text-align: center;
   background-color: #fff;
   margin: 5px;
+  padding: 3px;
   flex-direction: column;
   display: flex;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -227,6 +228,7 @@ a {
   border: none;
   background-color: transparent !important;
   font-size: 12px !important;
+  font-family: "Neutraface Text";
 }
 
 .backButton:hover {
@@ -246,7 +248,7 @@ a {
 
 .city-image {
   font-size: 40px;
-  margin: 0 0 -20px -15px;
+  margin: 0 0 -25px -18px;
   padding: 5px;
 }
 
@@ -275,7 +277,7 @@ a {
 .card-top {
   display: flex;
   justify-content: space-between;
-  padding: 5px 0 0;
+  /* padding: 5px 0 0; */
   align-items: center;
   flex-direction: column;
   align-items: flex-start;
@@ -295,7 +297,7 @@ a {
 }
 
 .nav-title {
-  font-size: 30px;
+  font-size: 25px;
   /* color: black; */
   font-family: "Neutraface Text";
   color: #ac8f45;
@@ -462,9 +464,9 @@ a {
 }
 
 .product-card-text {
-  width: 100px;
+  width: 120px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 22px;
   font-family: "Neutraface Text";
   padding: 10px 0;
   margin: 10px 0 10px 0;
@@ -543,7 +545,7 @@ a {
 
 .footer-text {
   font-family: "Neutraface Text";
-  font-size: 30px;
+  font-size: 28px;
   text-align: center;
   letter-spacing: 1px;
   padding: 10px;
@@ -598,21 +600,20 @@ a {
   flex-direction: column;
   padding: 10px;
   width: 240px;
+  font-family: "Neutraface Text";
 }
 
 .sitemap p {
   color: white;
-  font-family: "Neutraface Text";
 }
 
 .sitemap a {
   font-family: "Neutraface Text";
-  /* color: white; */
   padding: 5px 0;
   text-decoration: none;
   display: block;
-  font-family: "Lexend", sans-serif;
   color: #c6ffbb;
+  font-size: 18px;
 }
 
 .price {
@@ -685,6 +686,10 @@ a {
   .productList {
     flex-direction: column;
     align-items: center;
+  }
+  .product-card-text {
+    font-size: 20px !important;
+    width: 110px !important;
   }
 }
 

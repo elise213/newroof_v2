@@ -107,7 +107,7 @@ input textarea {
   font-size: large;
 }
 
-@media screen and (width <= 700px) {
+@media screen and (width <= 800px) {
   .contact-page {
     margin-top: 0 !important;
   }
