@@ -1,0 +1,122 @@
+/* [project]/src/app/contact/contact.css [app-client] (css) */
+.contact-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+.contact-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.contact-call {
+  display: flex;
+  padding: 10px 0 0;
+  width: 110%;
+  justify-content: flex-end;
+}
+
+.label {
+  font-family: Urbanist, sans-serif;
+  color: purple;
+}
+
+.form-control, .send-button {
+  letter-spacing: 2px;
+  border: 1px solid #000;
+  color: #000;
+  border-radius: 2px;
+  padding: 10px;
+  font-family: Urbanist, sans-serif;
+  box-shadow: 0 4px 8px #0003, 0 6px 20px #00000030;
+}
+
+.send-button {
+  background-color: #b3f3b3;
+  transition: all 50ms;
+  border-radius: 50%;
+  height: 60px;
+  position: absolute;
+  top: 345px;
+  right: 10px;
+}
+
+.form-control {
+  background-color: #fff;
+  width: 100%;
+}
+
+.contact-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.send-button:hover {
+  cursor: pointer;
+  background-color: #e6e6fa;
+  box-shadow: 0 4px 8px #0003, 0 6px 20px #00000030;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form-col {
+  width: 45%;
+}
+
+.form-col-full, .form-col {
+  width: 100%;
+  padding: 4px;
+  box-sizing: border-box;
+  margin: 0 10px;
+}
+
+.contact-form-div {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 25px 20px 10px;
+  position: relative;
+  height: 100%;
+  max-width: 700px;
+  min-height: 400px;
+}
+
+.message {
+  height: 80px;
+}
+
+input textarea {
+  font-size: large;
+}
+
+@media screen and (width <= 700px) {
+  .contact-page {
+    margin-top: 0 !important;
+  }
+
+  .send-button {
+    top: 265px !important;
+    right: 10px !important;
+  }
+}
+
+
+/*# sourceMappingURL=src_app_contact_contact_f3cf19.css.map*/

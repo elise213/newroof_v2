@@ -1,8 +1,9 @@
-"use client"; // Required for stateful components
-import { useContext } from "react";
+"use client";
+import { useContext, useEffect, useState } from "react";
 import Link from "next/link";
 import { Context } from "./store/appContext";
 import { Footer } from "./component/footer";
+import { Navbar } from "./component/navbar";
 import Image from "next/image";
 
 // Product list
@@ -11,7 +12,7 @@ const products = [
     id: 1,
     name: "NEW YORK",
     image: "🍎",
-    wa: "/img/WhatsAppNY.svg.png", // ✅ Use relative path
+    wa: "/img/WhatsAppNY.svg.png",
     price: 25,
     stripePriceId:
       // "price_1Q0AOfFOQNBOjDBoAfsHiP28",
@@ -21,7 +22,7 @@ const products = [
     id: 2,
     name: "LA",
     image: "🎥",
-    wa: "/img/WhatsAppLA.svg.png", // ✅ Use relative path
+    wa: "/img/WhatsAppLA.svg.png",
     price: 25,
     stripePriceId: "price_1Q0REKFOQNBOjDBoARzVNljt",
     // "price_1Q0AUyFOQNBOjDBoLQShBVIX",
@@ -30,7 +31,7 @@ const products = [
     id: 3,
     name: "MIAMI",
     image: "🌴",
-    wa: "/img/WhatsAppMI.svg.png", // ✅ Use relative path
+    wa: "/img/WhatsAppMI.svg.png",
     price: 25,
     stripePriceId:
       // "price_1Q0ASpFOQNBOjDBoXfBS7u3U",
@@ -40,18 +41,17 @@ const products = [
 
 export default function Home() {
   const { store, actions } = useContext(Context);
+  const [isClient, setIsClient] = useState(false);
+
+  // Ensure component loads before modifying cart state to prevent hydration mismatch
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   return (
     <div className="page">
       {/* Header */}
-      <div className="cart">
-        <span className="nav-title">RICKY'S HOMESHARING</span>
-        <div
-          className={`cartIcon ${store.cart.length > 0 ? "pulse-cart" : ""}`}
-        >
-          <Link href="/checkout">🛒</Link>
-        </div>
-      </div>
+      <Navbar />
 
       {/* Product List */}
       <div className="productList">
@@ -68,7 +68,13 @@ export default function Home() {
 
               <div className="group-div">
                 <div className="city-image">{product.image}</div>
-                {store.cart.some((item) => item.id === product.id) ? (
+
+                {/* Ensure initial SSR and Client render match to prevent hydration errors */}
+                {!isClient ? (
+                  <button className="addToCart" disabled>
+                    Loading...
+                  </button>
+                ) : store.cart.some((item) => item.id === product.id) ? (
                   <span className="in-cart-text">* In your cart</span>
                 ) : (
                   <button
@@ -83,6 +89,8 @@ export default function Home() {
           </div>
         ))}
       </div>
+
+      {/* Footer */}
       <Footer />
     </div>
   );

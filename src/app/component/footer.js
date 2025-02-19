@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -5,12 +6,19 @@ export const Footer = () => (
   <footer className="footer">
     <div className="footer-div-1">
       <div className="sitemap">
-        <Link href="/">HOME</Link>
-        <a href="https://billing.stripe.com/p/login/5kA9BZ1aE7ZDgAo9AA">
+        <Link href="/" passHref>
+          HOME
+        </Link>
+        <Link
+          href="https://billing.stripe.com/p/login/5kA9BZ1aE7ZDgAo9AA"
+          passHref
+        >
           ACCOUNT
-        </a>
-        <Link href="/terms">RULES & TERMS</Link>
-        <Link href="/contact">
+        </Link>
+        <Link href="/terms" passHref>
+          RULES & TERMS
+        </Link>
+        <Link href="/contact" passHref>
           CONTACT
           <Image
             className="whats"

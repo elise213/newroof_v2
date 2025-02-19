@@ -1,12 +1,12 @@
 "use client";
-import React, { useContext, useRef } from "react";
+import React, { useContext, useRef, useEffect } from "react";
 import { Context } from "../store/appContext";
 import styles from "./contact.css";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import Link from "next/link";
-// import { Navbar } from "../component/navbar";
-// import { Footer } from "../component/footer";
+import { Navbar } from "../component/navbar";
+import { Footer } from "../component/footer";
 
 const Contact = () => {
   const { actions } = useContext(Context);
@@ -39,14 +39,15 @@ const Contact = () => {
 
   return (
     <div className="contact-page">
+      <Navbar />
       <div className="contact-div">
         <form ref={form} onSubmit={sendEmail} className="contact-form">
           <div className="contact-call">
-            <Link href="/">
+            <Link href="/" passHref>
               <span className="close-contact">
                 <i className="fa-solid fa-x"></i>
               </span>
-            </Link>{" "}
+            </Link>
           </div>
           <div className="contact-form-div">
             <div className="form-col">
@@ -86,6 +87,7 @@ const Contact = () => {
                 name="message"
                 className="form-control"
                 placeholder="Message"
+                style={{ minHeight: "130px" }}
               ></textarea>
             </div>
           </div>
@@ -96,7 +98,7 @@ const Contact = () => {
           </div>
         </form>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

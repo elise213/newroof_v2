@@ -70,7 +70,7 @@ const Checkout = () => {
   return (
     <div className="checkoutPage">
       {/* Back to Shop Button */}
-      <Link href="/">
+      <Link href="/" passHref>
         <Button startIcon={<ArrowBackIosIcon />} className="backButton">
           Back to Shop
         </Button>
@@ -112,7 +112,7 @@ const Checkout = () => {
             />
             <span className="terms">
               To proceed with your purchase, it's important to understand the{" "}
-              <Link className="terms-link" href="/terms">
+              <Link className="terms-link" href="/terms" passHref>
                 rules and terms
               </Link>{" "}
               of the group. By checking this box, you are agreeing to these

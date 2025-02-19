@@ -1,19 +1,28 @@
-import React from "react";
+import React, { useContext, useState, useEffect } from "react";
 import Link from "next/link";
+import { Context } from "../store/appContext";
 
 export const Navbar = () => {
+  const { actions, store } = useContext(Context);
+  const [cartClass, setCartClass] = useState("cartIcon");
+
+  useEffect(() => {
+    if (store.cart.length > 0) {
+      setCartClass("cartIcon pulse-cart");
+    }
+  }, [store.cart.length]);
   return (
     <nav className="navbar navbar-light bg-light">
       <div className="container">
-        <Link to="/">
-          <span className="navbar-brand mb-0 h1">React Boilerplate</span>
-        </Link>
-        <div className="ml-auto">
-          <Link to="/demo">
-            <button className="btn btn-primary">
-              Check the Context in action
-            </button>
+        <div className="cart">
+          <Link href="/" passHref>
+            <span className="nav-title">RICKY'S HOMESHARING</span>
           </Link>
+          <div className={cartClass}>
+            <Link href="/checkout" passHref>
+              🛒
+            </Link>
+          </div>
         </div>
       </div>
     </nav>

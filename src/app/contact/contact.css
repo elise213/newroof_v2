@@ -1,14 +1,12 @@
 .contact-page {
-  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  /* background-color: #fffdf3; */
   overflow-y: auto;
   overflow-x: hidden;
-  margin-top: 90px;
+
+  height: 100vh;
 }
 
 .contact-div {
@@ -37,20 +35,19 @@
   border: 1px solid black;
   color: black;
   border-radius: 2px;
-
   padding: 10px;
   font-family: "Urbanist", sans-serif;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .send-button {
-  background-color: rgb(179, 243, 179);
-  transition: 0.05s ease;
+  background-color: #b3f3b3;
+  transition: all 50ms;
   border-radius: 50%;
   height: 60px;
   position: absolute;
-  top: 270px;
-  right: 0px;
+  top: 345px;
+  right: 10px;
 }
 
 .form-control {
@@ -117,7 +114,7 @@ input textarea {
     margin-top: 0 !important;
   }
   .send-button {
-    top: 275px !important;
+    top: 265px !important;
     right: 10px !important;
   }
 }
