@@ -120,7 +120,8 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #c6ffbb;
+  /* background-color: #c6ffbb; */
+  background-color: #cbf5c3;
   font-family: "Neutraface Text";
 }
 
@@ -133,7 +134,7 @@ a {
 }
 
 .product {
-  border: 1px solid saddlebrown;
+  border: 1px solid #ac8f45;
   border-radius: 4px;
   text-align: center;
   background-color: #fff;
@@ -166,6 +167,11 @@ a {
 }
 .pulse-cart {
   animation: pulseCart 1.5s infinite ease-in-out;
+}
+
+.terms-link {
+  color: blue !important;
+  text-decoration: underline;
 }
 
 /* Pulsing animation */
@@ -268,10 +274,11 @@ a {
 
 .card-top {
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-between;
-  padding: 5px 0 0 0;
+  padding: 5px 0 0;
   align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .addToCart,
@@ -295,12 +302,13 @@ a {
 }
 
 .addToCart {
-  background-color: #e4d2ff;
+  /* background-color: #e4d2ff; */
+  background-color: #d2efff;
   box-sizing: border-box;
-  border: 1px solid #8b4513;
+  border: 1px solid #ac8f45;
   align-self: center;
   padding: 3px;
-  color: #8b4513;
+  color: saddlebrown;
   width: unset;
   justify-self: flex-start;
   align-self: flex-end;
@@ -312,7 +320,7 @@ a {
 
 /* Hover effect */
 .addToCart:hover {
-  background-color: rgb(203, 194, 216);
+  background-color: #c6ffbb !important;
   transition: background-color 1s, transform 0.3s ease-in-out;
 }
 
@@ -383,9 +391,10 @@ a {
 }
 
 .whats {
-  width: 25px;
+  height: 15px;
+  width: 17px;
   margin: 0 0 0 5px;
-  /* position: absolute; */
+  display: none;
 }
 
 .in-cart-text {
@@ -477,8 +486,8 @@ a {
 .terms_checkbox {
   margin-right: 30px;
   appearance: none;
-  width: 20px !important;
-  height: 20px !important;
+  width: 15px !important;
+  height: 15px !important;
   border: 1px solid #000;
   background-color: #fff;
   cursor: pointer;
@@ -490,7 +499,7 @@ a {
 
 .terms_checkbox:checked {
   background-color: #c6ffbb;
-  border-color: saddlebrown;
+  border-color: #ac8f45;
 }
 
 .terms_checkbox:checked::after {
@@ -598,11 +607,12 @@ a {
 
 .sitemap a {
   font-family: "Neutraface Text";
-  color: white;
+  /* color: white; */
   padding: 5px 0;
   text-decoration: none;
   display: block;
   font-family: "Lexend", sans-serif;
+  color: #c6ffbb;
 }
 
 .price {

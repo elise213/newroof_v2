@@ -1,0 +1,123 @@
+.contact-page {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #fffdf3; */
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: 90px;
+}
+
+.contact-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.contact-call {
+  display: flex;
+  padding: 10px 0 0 0;
+  width: 110%;
+  justify-content: flex-end;
+}
+
+.label {
+  font-family: "Urbanist", sans-serif;
+  color: purple;
+}
+
+.form-control,
+.send-button {
+  letter-spacing: 2px;
+  border: 1px solid black;
+  color: black;
+  border-radius: 2px;
+
+  padding: 10px;
+  font-family: "Urbanist", sans-serif;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.send-button {
+  background-color: rgb(179, 243, 179);
+  transition: 0.05s ease;
+  border-radius: 50%;
+  height: 60px;
+  position: absolute;
+  top: 270px;
+  right: 0px;
+}
+
+.form-control {
+  background-color: white;
+  width: 100%;
+}
+
+.contact-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.send-button:hover {
+  cursor: pointer;
+  background-color: lavender;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form-col {
+  width: 45%;
+}
+
+.form-col-full,
+.form-col {
+  width: 100%;
+  padding: 4px;
+  box-sizing: border-box;
+  margin: 0px 10px 0px 10px;
+}
+
+.contact-form-div {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 25px 20px 10px;
+  position: relative;
+  height: 100%;
+  max-width: 700px;
+  min-height: 400px;
+}
+
+.message {
+  height: 80px;
+}
+
+input textarea {
+  font-size: large;
+}
+
+@media screen and (max-width: 700px) {
+  .contact-page {
+    margin-top: 0 !important;
+  }
+  .send-button {
+    top: 275px !important;
+    right: 10px !important;
+  }
+}

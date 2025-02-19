@@ -10,7 +10,7 @@ export const Footer = () => (
           ACCOUNT
         </a>
         <Link href="/terms">RULES & TERMS</Link>
-        <Link href="/">
+        <Link href="/contact">
           CONTACT
           <Image
             className="whats"

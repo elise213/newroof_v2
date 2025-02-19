@@ -8,7 +8,7 @@ export async function POST(req) {
   try {
     console.log("Received request to /api/checkout");
 
-    const { cart } = await req.json(); // Parse JSON request body
+    const { cart } = await req.json();
     console.log("Cart data:", cart);
 
     if (!cart || !Array.isArray(cart) || cart.length === 0) {
@@ -20,7 +20,7 @@ export async function POST(req) {
 
     const lineItems = cart.map((item) => ({
       price: item.stripePriceId,
-      quantity: 1, // Default to 1 per item
+      quantity: 1,
     }));
 
     // Create a Stripe Checkout Session
@@ -29,7 +29,7 @@ export async function POST(req) {
       line_items: lineItems,
       mode: "subscription",
       phone_number_collection: { enabled: true },
-      success_url: `${YOUR_DOMAIN}/return?session_id={CHECKOUT_SESSION_ID}`,
+      success_url: `${YOUR_DOMAIN}/success?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${YOUR_DOMAIN}/checkout`,
     });
 

@@ -112,8 +112,11 @@ const Checkout = () => {
             />
             <span className="terms">
               To proceed with your purchase, it's important to understand the{" "}
-              <Link href="/terms">rules and terms</Link> of the group. By
-              checking this box, you are agreeing to these terms.
+              <Link className="terms-link" href="/terms">
+                rules and terms
+              </Link>{" "}
+              of the group. By checking this box, you are agreeing to these
+              terms.
             </span>
           </div>
 
