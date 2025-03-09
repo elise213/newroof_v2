@@ -136,7 +136,7 @@ main {
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
-  margin: 30px auto;
+  margin: 20px auto;
   gap: 20px;
   box-sizing: border-box;
 }
@@ -491,48 +491,6 @@ main {
   margin: 10px 0;
 }
 
-.termsDiv {
-  display: flex;
-  margin-top: 40px;
-}
-
-.terms {
-  text-align: justify;
-  color: #000;
-  font-family: Neutraface Text;
-  font-size: 14px;
-  line-height: 16px;
-}
-
-.terms_checkbox {
-  margin-right: 20px;
-  appearance: none;
-  border: 1px solid #000;
-  background-color: #fff;
-  cursor: pointer;
-  position: relative;
-  padding: 8px;
-  overflow: visible;
-  border-radius: 2px;
-  width: 15px !important;
-  height: 15px !important;
-}
-
-.terms_checkbox:checked {
-  background-color: #c6ffbb;
-  border-color: var(--color2);
-}
-
-.terms_checkbox:checked:after {
-  content: "✔";
-  font-size: 16px;
-  color: #000;
-  position: absolute;
-  left: 3px;
-  top: 1px;
-  z-index: 9999999;
-}
-
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -664,6 +622,31 @@ main {
   background-color: #c5a450;
   box-shadow: 0 6px 15px #0009;
   transform: scale(1.05);
+}
+
+.termsDiv {
+  display: flex;
+  margin-top: 40px;
+}
+
+.terms {
+  text-align: justify;
+  color: #000;
+  font-family: Neutraface Text;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.terms_checkbox {
+  margin-right: 10px;
+  border: 1px solid #000;
+  background-color: #fff;
+  cursor: pointer;
+  position: relative;
+  border-radius: 2px;
+  box-sizing: border-box;
+  width: 55px !important;
+  height: 15px !important;
 }
 
 @keyframes pulse {

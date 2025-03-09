@@ -1,16 +1,15 @@
-"use client";
-
 const getState = ({ getStore, getActions, setStore }) => {
   return {
     store: {
-      // cart: JSON.parse(localStorage.getItem("cart")) || [],
-
-      cart:
-        typeof window !== "undefined"
-          ? JSON.parse(localStorage.getItem("cart")) || []
-          : [], // only runs in browser
+      cart: [],
     },
     actions: {
+      initCart: () => {
+        if (typeof window !== "undefined") {
+          const savedCart = JSON.parse(localStorage.getItem("cart")) || [];
+          setStore({ cart: savedCart });
+        }
+      },
       addToCart: (item) => {
         const store = getStore();
         const updatedCart = [...store.cart, item];

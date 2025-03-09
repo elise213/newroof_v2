@@ -107,7 +107,6 @@ const Checkout = () => {
                   className="terms_checkbox"
                   checked={isChecked}
                   onChange={() => setIsChecked(!isChecked)}
-                  style={{ accentColor: "white" }}
                 />
                 <span className="terms">
                   To proceed with your purchase, it's important to understand

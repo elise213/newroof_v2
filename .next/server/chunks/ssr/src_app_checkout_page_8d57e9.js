@@ -192,10 +192,7 @@ const Checkout = ()=>{
                                         type: "checkbox",
                                         className: "terms_checkbox",
                                         checked: isChecked,
-                                        onChange: ()=>setIsChecked(!isChecked),
-                                        style: {
-                                            accentColor: "white"
-                                        }
+                                        onChange: ()=>setIsChecked(!isChecked)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/checkout/page.js",
                                         lineNumber: 105,
@@ -213,7 +210,7 @@ const Checkout = ()=>{
                                                 children: "rules and terms"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/checkout/page.js",
-                                                lineNumber: 115,
+                                                lineNumber: 114,
                                                 columnNumber: 19
                                             }, this),
                                             " ",
@@ -221,7 +218,7 @@ const Checkout = ()=>{
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/checkout/page.js",
-                                        lineNumber: 112,
+                                        lineNumber: 111,
                                         columnNumber: 17
                                     }, this)
                                 ]
@@ -241,7 +238,7 @@ const Checkout = ()=>{
                                 children: "Proceed to Payment"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/checkout/page.js",
-                                lineNumber: 124,
+                                lineNumber: 123,
                                 columnNumber: 17
                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 style: {
@@ -249,7 +246,7 @@ const Checkout = ()=>{
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/src/app/checkout/page.js",
-                                lineNumber: 136,
+                                lineNumber: 135,
                                 columnNumber: 17
                             }, this)
                         ]
@@ -264,7 +261,7 @@ const Checkout = ()=>{
                         children: "Your cart is empty."
                     }, void 0, false, {
                         fileName: "[project]/src/app/checkout/page.js",
-                        lineNumber: 140,
+                        lineNumber: 139,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {

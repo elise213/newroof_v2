@@ -3,6 +3,7 @@ import "./termsandconditions.css";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import { Button } from "@mui/material";
 import Link from "next/link";
+import styles from "./termsandconditions.css";
 
 const TermsAndConditions = () => {
   return (
