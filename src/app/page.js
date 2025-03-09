@@ -1,12 +1,7 @@
 "use client";
 import { useContext, useEffect, useState } from "react";
-import Link from "next/link";
 import { Context } from "./store/appContext";
-import { Footer } from "./component/footer";
-import { Navbar } from "./component/navbar";
-import Image from "next/image";
 
-// Product list
 const products = [
   {
     id: 1,
@@ -43,17 +38,12 @@ export default function Home() {
   const { store, actions } = useContext(Context);
   const [isClient, setIsClient] = useState(false);
 
-  // Ensure component loads before modifying cart state to prevent hydration mismatch
   useEffect(() => {
     setIsClient(true);
   }, []);
 
   return (
     <div className="page">
-      {/* Header */}
-      <Navbar />
-
-      {/* Product List */}
       <div className="productList">
         {products.map((product) => (
           <div className="product" key={product.id}>
@@ -65,11 +55,8 @@ export default function Home() {
               <div className="product-text-div">
                 <p className="product-card-text">{product.name}</p>
               </div>
-
               <div className="group-div">
                 <div className="city-image">{product.image}</div>
-
-                {/* Ensure initial SSR and Client render match to prevent hydration errors */}
                 {!isClient ? (
                   <button className="addToCart" disabled>
                     Loading...
@@ -89,9 +76,6 @@ export default function Home() {
           </div>
         ))}
       </div>
-
-      {/* Footer */}
-      <Footer />
     </div>
   );
 }

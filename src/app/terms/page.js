@@ -2,27 +2,24 @@ import React from "react";
 import "./termsandconditions.css";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import { Button } from "@mui/material";
+import Link from "next/link";
 
 const TermsAndConditions = () => {
   return (
     <div className="terms-container">
-      <a href="/checkout">
-        <Button
-          className="backButton"
-          style={{ position: "absolute", left: "0px", top: "0px" }}
-        >
-          <ArrowBackIosIcon />
-          Back
+      <Link href="/checkout" passHref>
+        <Button startIcon={<ArrowBackIosIcon />} className="backButton">
+          Back to Checkout
         </Button>
-      </a>
+      </Link>
       <div className="terms-header">
-        <p className="terms-title">
-          Terms and Conditions for Annual Membership
-        </p>
         <p className="terms-dates">
           Effective Date: October 1, 2022
           <br />
           Last Updated: October 7, 2024
+        </p>
+        <p className="terms-title">
+          Terms and Conditions for Annual Membership
         </p>
       </div>
 

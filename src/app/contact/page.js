@@ -5,8 +5,8 @@ import styles from "./contact.css";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import Link from "next/link";
-import { Navbar } from "../component/navbar";
-import { Footer } from "../component/footer";
+// import { Navbar } from "../component/navbar";
+// import { Footer } from "../component/footer";
 
 const Contact = () => {
   const { actions } = useContext(Context);
@@ -39,7 +39,7 @@ const Contact = () => {
 
   return (
     <div className="contact-page">
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="contact-div">
         <form ref={form} onSubmit={sendEmail} className="contact-form">
           <div className="contact-call">
@@ -98,7 +98,7 @@ const Contact = () => {
           </div>
         </form>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

@@ -1,14 +1,12 @@
-"use client"; // Required for stateful client components
+"use client";
 
 import { useContext, useState, useEffect } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import { Context } from "../store/appContext";
-import { Footer } from "../component/footer";
 import { Avatar, Menu, MenuItem, IconButton, Button } from "@mui/material";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import Link from "next/link";
 
-// Load Stripe (Uses Next.js Env Variable)
 const stripePromise = loadStripe(
   process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
 );
@@ -18,7 +16,6 @@ const Checkout = () => {
   const [totalAmount, setTotalAmount] = useState(0);
   const [isChecked, setIsChecked] = useState(false);
 
-  // Calculate total amount when the cart changes
   useEffect(() => {
     const total = store.cart.reduce((sum, item) => sum + item.price, 0);
     setTotalAmount(total);
@@ -68,80 +65,83 @@ const Checkout = () => {
   };
 
   return (
-    <div className="checkoutPage">
-      {/* Back to Shop Button */}
-      <Link href="/" passHref>
-        <Button startIcon={<ArrowBackIosIcon />} className="backButton">
-          Back to Shop
-        </Button>
-      </Link>
+    <>
+      <div className="checkoutPage">
+        <Link href="/" passHref>
+          <Button startIcon={<ArrowBackIosIcon />} className="backButton">
+            Back to Shop
+          </Button>
+        </Link>
+        <div className="bill-container">
+          {store.cart.length > 0 ? (
+            <div className="cartDiv">
+              <ul>
+                {store.cart.map((item, index) => (
+                  <li key={index}>
+                    <span className="name-checkout">
+                      {item.name} Housing Group
+                    </span>
+                    <div>
+                      <span className="price-checkout">${item.price}</span>
+                      <button
+                        className="remove-cart"
+                        onClick={() => actions.removeFromCart(item.id)}
+                        title={`Remove ${item.name} from your cart`}
+                      >
+                        X
+                      </button>
+                    </div>
+                  </li>
+                ))}
+              </ul>
 
-      {store.cart.length > 0 ? (
-        <div className="cartDiv">
-          <ul>
-            {store.cart.map((item, index) => (
-              <li key={index}>
-                <span className="name-checkout">{item.name} Housing Group</span>
-                <div>
-                  <span className="price-checkout">${item.price}</span>
-                  <button
-                    className="remove-cart"
-                    onClick={() => actions.removeFromCart(item.id)}
-                    title={`Remove ${item.name} from your cart`}
-                  >
-                    X
-                  </button>
-                </div>
-              </li>
-            ))}
-          </ul>
+              <div className="total-div">
+                <span> Billed Annually</span>
+                <span className="total">Total: ${totalAmount}</span>
+              </div>
 
-          <div className="total-div">
-            <span> Billed Annually</span>
-            <span className="total">Total: ${totalAmount}</span>
-          </div>
+              {/* Terms Agreement */}
+              <div className="termsDiv">
+                <input
+                  type="checkbox"
+                  className="terms_checkbox"
+                  checked={isChecked}
+                  onChange={() => setIsChecked(!isChecked)}
+                  style={{ accentColor: "white" }}
+                />
+                <span className="terms">
+                  To proceed with your purchase, it's important to understand
+                  the{" "}
+                  <Link className="terms-link" href="/terms" passHref>
+                    rules and terms
+                  </Link>{" "}
+                  of the group. By checking this box, you are agreeing to these
+                  terms.
+                </span>
+              </div>
 
-          {/* Terms Agreement */}
-          <div className="termsDiv">
-            <input
-              type="checkbox"
-              className="terms_checkbox"
-              checked={isChecked}
-              onChange={() => setIsChecked(!isChecked)}
-              style={{ accentColor: "white" }}
-            />
-            <span className="terms">
-              To proceed with your purchase, it's important to understand the{" "}
-              <Link className="terms-link" href="/terms" passHref>
-                rules and terms
-              </Link>{" "}
-              of the group. By checking this box, you are agreeing to these
-              terms.
-            </span>
-          </div>
-
-          {isChecked ? (
-            <button
-              className="addToCart"
-              style={{
-                borderRadius: "4px",
-                margin: "13px 0",
-                alignSelf: "center",
-              }}
-              onClick={handleCheckout}
-            >
-              Proceed to Payment
-            </button>
+              {isChecked ? (
+                <button
+                  className="addToCart"
+                  style={{
+                    borderRadius: "4px",
+                    margin: "13px 0",
+                    alignSelf: "center",
+                  }}
+                  onClick={handleCheckout}
+                >
+                  Proceed to Payment
+                </button>
+              ) : (
+                <div style={{ margin: "23px" }}></div>
+              )}
+            </div>
           ) : (
-            <div style={{ margin: "23px" }}></div>
+            <p style={{ color: "black" }}>Your cart is empty.</p>
           )}
         </div>
-      ) : (
-        <p style={{ color: "black" }}>Your cart is empty.</p>
-      )}
-
-      <Footer />
-    </div>
+      </div>
+    </>
   );
 };
 

@@ -2,18 +2,22 @@
 
 import Link from "next/link";
 import "./globals.css";
-import injectContext from "./store/appContext.js";
+import { Navbar } from "./component/Navbar";
+import { Footer } from "./component/Footer";
+import injectContext from "./store/appContext";
 
 export default function RootLayout({ children }) {
   const StoreWrapper = injectContext(({ children }) => <>{children}</>);
 
   return (
-    <html lang="en">
-      <body>
-        <StoreWrapper>
+    <StoreWrapper>
+      <html lang="en">
+        <body>
+          <Navbar />
           <main>{children}</main>
-        </StoreWrapper>
-      </body>
-    </html>
+          <Footer />
+        </body>
+      </html>
+    </StoreWrapper>
   );
 }

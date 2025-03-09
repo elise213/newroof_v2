@@ -1,18 +1,13 @@
 /* [project]/src/app/terms/termsandconditions.css [app-client] (css) */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #fff;
-  margin: 0;
-  padding: 0;
-}
-
 .terms-container {
   width: 100%;
   max-width: 900px;
-  margin: 50px auto 0;
-  padding: 25px;
-  background: #fff;
+  margin: 0;
   border-radius: 10px;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
 }
 
 .section-content, .section-list {
@@ -23,33 +18,36 @@ body {
 
 .terms-header {
   text-align: center;
-  margin-bottom: 20px;
 }
 
 .terms-title {
   font-size: 22px;
   color: #333;
-  margin-bottom: 10px;
-  font-family: Neutraface Text, sans-serif !important;
+  margin: 15px 0;
+  font-family: Neutraface Text, sans-serif;
+  font-weight: 500;
 }
 
 .terms-dates {
-  font-size: 11px;
+  font-size: 10px;
   color: #666;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-family: Neutraface Text;
+  font-family: Neutraface Text, sans-serif;
   font-size: 10px;
   line-height: 16px;
+  margin: 10px;
+  justify-content: flex-end;
+  display: flex;
 }
 
 .terms-section {
-  margin: 20px 0;
+  margin: 10px 0;
   padding: 15px;
   border-left: 4px solid #ac8f45;
   background: #f1faff;
   border-radius: 5px;
+  width: 100%;
+  max-width: 500px;
+  align-self: center;
 }
 
 .section-title {
@@ -77,14 +75,12 @@ body {
 
 @media screen and (width <= 700px) {
   .terms-container {
-    width: 95%;
-    padding: 15px;
-    box-shadow: none;
     border-radius: 0;
+    padding: 15px !important;
   }
 
   .terms-title {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .section-title {
@@ -93,35 +89,12 @@ body {
 
   .section-content, .section-list li {
     font-size: 14px;
-  }
-
-  .backButton {
-    font-size: 14px;
-    padding: 8px 15px;
   }
 }
 
-@media screen and (width >= 700px) {
-  .terms-container {
-    width: 70%;
-    padding: 30px;
-  }
-
+@media screen and (width <= 500px) {
   .terms-title {
-    font-size: 32px;
-  }
-
-  .section-title {
-    font-size: 22px;
-  }
-
-  .section-content, .section-list li {
-    font-size: 18px;
-  }
-
-  .backButton {
-    font-size: 18px;
-    padding: 12px 25px;
+    font-size: 16px !important;
   }
 }
 
