@@ -223,17 +223,18 @@ main {
 .backButton {
   display: flex;
   padding: 0;
-  margin: 0;
+  margin: 10px;
   align-items: center;
   text-decoration: none;
   border: none;
   cursor: pointer;
   color: var(--color2) !important;
   background-color: transparent;
-  font-size: 12px;
+  font-size: 14px;
   font-family: "Neutraface Text";
-  transition: color 1.5s ease-in-out, opacity 1.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
   opacity: 1;
+  font-weight: 400;
 }
 
 .backButton:hover {

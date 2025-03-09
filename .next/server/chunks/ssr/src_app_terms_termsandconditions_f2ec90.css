@@ -17,6 +17,10 @@
 
 .terms-header {
   text-align: center;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
 }
 
 .terms-title {

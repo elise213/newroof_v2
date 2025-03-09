@@ -1,7 +1,7 @@
 import React from "react";
 import "./termsandconditions.css";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
-import { Button } from "@mui/material";
+// import { Button } from "@mui/material";
 import Link from "next/link";
 import styles from "./termsandconditions.css";
 
@@ -9,22 +9,27 @@ const TermsAndConditions = () => {
   return (
     <div className="terms-container">
       <Link href="/checkout" passHref>
-        <Button startIcon={<ArrowBackIosIcon />} className="backButton">
+        {/* <Button startIcon={<ArrowBackIosIcon />} className="backButton">
           Back to Checkout
-        </Button>
+        </Button> */}
+        <button className="backButton">
+          {" "}
+          {<ArrowBackIosIcon />}
+          BACK TO CHECKOUT
+        </button>
       </Link>
 
+      <div className="terms-header">
+        <p className="terms-dates">
+          Effective Date: October 1, 2022
+          <br />
+          Last Updated: October 7, 2024
+        </p>
+        <p className="terms-title">
+          Terms and Conditions for Annual Membership
+        </p>
+      </div>
       <div className="terms-section">
-        <div className="terms-header">
-          <p className="terms-dates">
-            Effective Date: October 1, 2022
-            <br />
-            Last Updated: October 7, 2024
-          </p>
-          <p className="terms-title">
-            Terms and Conditions for Annual Membership
-          </p>
-        </div>
         <p className="section-title">Membership Overview</p>
         <p className="section-content">
           By subscribing to an annual group membership, you are granted access
