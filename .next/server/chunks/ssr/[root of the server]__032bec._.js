@@ -131,7 +131,7 @@ function RootLayout({ children }) {
                     children: children
                 }, void 0, false, {
                     fileName: "[project]/src/app/layout.js",
-                    lineNumber: 28,
+                    lineNumber: 14,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {

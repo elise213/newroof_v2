@@ -11,20 +11,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <StoreWrapper>
-          {/* <nav>
-            <ul>
-              <li>
-                <Link href="/">Home</Link>
-              </li>
-              <li>
-                <Link href="/checkout">Checkout</Link>
-              </li>
-              <li>
-                <Link href="/terms">Terms & Conditions</Link>
-              </li>
-            </ul>
-          </nav> */}
-
           <main>{children}</main>
         </StoreWrapper>
       </body>
