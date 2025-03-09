@@ -177,6 +177,9 @@ const Checkout = ()=>{
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "total",
+                                        style: {
+                                            color: "red"
+                                        },
                                         children: [
                                             "Total: $",
                                             totalAmount
@@ -237,7 +240,6 @@ const Checkout = ()=>{
                             isChecked ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 className: "addToCart",
                                 style: {
-                                    borderRadius: "4px",
                                     margin: "13px 0",
                                     alignSelf: "center"
                                 },
@@ -253,7 +255,7 @@ const Checkout = ()=>{
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/src/app/checkout/page.js",
-                                lineNumber: 135,
+                                lineNumber: 134,
                                 columnNumber: 17
                             }, this)
                         ]
@@ -268,7 +270,7 @@ const Checkout = ()=>{
                         children: "Your cart is empty."
                     }, void 0, false, {
                         fileName: "[project]/src/app/checkout/page.js",
-                        lineNumber: 139,
+                        lineNumber: 138,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {

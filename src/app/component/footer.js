@@ -31,7 +31,9 @@ export const Footer = () => (
       </div>
     </div>
     <div className="footer-div-2">
-      <p className="footer-text">RICKY'S HOMESHARING</p>
+      <Link href="/" passHref>
+        <p className="footer-text">RICKY'S HOMESHARING</p>
+      </Link>
 
       <p style={{ fontSize: "12px", color: "white" }}>
         © 2025 Ricky's Homesharing, All Rights Reserved

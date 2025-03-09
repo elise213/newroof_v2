@@ -13,18 +13,18 @@ const TermsAndConditions = () => {
           Back to Checkout
         </Button>
       </Link>
-      <div className="terms-header">
-        <p className="terms-dates">
-          Effective Date: October 1, 2022
-          <br />
-          Last Updated: October 7, 2024
-        </p>
-        <p className="terms-title">
-          Terms and Conditions for Annual Membership
-        </p>
-      </div>
 
       <div className="terms-section">
+        <div className="terms-header">
+          <p className="terms-dates">
+            Effective Date: October 1, 2022
+            <br />
+            Last Updated: October 7, 2024
+          </p>
+          <p className="terms-title">
+            Terms and Conditions for Annual Membership
+          </p>
+        </div>
         <p className="section-title">Membership Overview</p>
         <p className="section-content">
           By subscribing to an annual group membership, you are granted access

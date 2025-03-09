@@ -19,6 +19,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$ico
 ;
 ;
 ;
+;
 const TermsAndConditions = ()=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "terms-container",
@@ -29,63 +30,63 @@ const TermsAndConditions = ()=>{
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__["Button"], {
                     startIcon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$ArrowBackIos$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "[project]/src/app/terms/page.js",
-                        lineNumber: 11,
+                        lineNumber: 12,
                         columnNumber: 28
                     }, void 0),
                     className: "backButton",
                     children: "Back to Checkout"
                 }, void 0, false, {
                     fileName: "[project]/src/app/terms/page.js",
-                    lineNumber: 11,
+                    lineNumber: 12,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/terms/page.js",
-                lineNumber: 10,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "terms-header",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "terms-dates",
-                        children: [
-                            "Effective Date: October 1, 2022",
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                fileName: "[project]/src/app/terms/page.js",
-                                lineNumber: 18,
-                                columnNumber: 11
-                            }, this),
-                            "Last Updated: October 7, 2024"
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/app/terms/page.js",
-                        lineNumber: 16,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "terms-title",
-                        children: "Terms and Conditions for Annual Membership"
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/terms/page.js",
-                        lineNumber: 21,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/src/app/terms/page.js",
-                lineNumber: 15,
+                lineNumber: 11,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "terms-section",
                 children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "terms-header",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "terms-dates",
+                                children: [
+                                    "Effective Date: October 1, 2022",
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                        fileName: "[project]/src/app/terms/page.js",
+                                        lineNumber: 21,
+                                        columnNumber: 13
+                                    }, this),
+                                    "Last Updated: October 7, 2024"
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/terms/page.js",
+                                lineNumber: 19,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "terms-title",
+                                children: "Terms and Conditions for Annual Membership"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/terms/page.js",
+                                lineNumber: 24,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/terms/page.js",
+                        lineNumber: 18,
+                        columnNumber: 9
+                    }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: "section-title",
                         children: "Membership Overview"
                     }, void 0, false, {
                         fileName: "[project]/src/app/terms/page.js",
-                        lineNumber: 27,
+                        lineNumber: 28,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -93,13 +94,13 @@ const TermsAndConditions = ()=>{
                         children: "By subscribing to an annual group membership, you are granted access to a private WhatsApp group where members can offer and exchange homes for temporary accommodation in exchange for a fee. By joining, you agree to abide by the following terms and conditions."
                     }, void 0, false, {
                         fileName: "[project]/src/app/terms/page.js",
-                        lineNumber: 28,
+                        lineNumber: 29,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/terms/page.js",
-                lineNumber: 26,
+                lineNumber: 17,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -110,7 +111,7 @@ const TermsAndConditions = ()=>{
                         children: "Membership"
                     }, void 0, false, {
                         fileName: "[project]/src/app/terms/page.js",
-                        lineNumber: 37,
+                        lineNumber: 38,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -120,40 +121,40 @@ const TermsAndConditions = ()=>{
                                 children: "Membership is valid for one year from the date of subscription."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/terms/page.js",
-                                lineNumber: 39,
+                                lineNumber: 40,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                 children: "Your membership will automatically renew if you do not cancel."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/terms/page.js",
-                                lineNumber: 42,
+                                lineNumber: 43,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                 children: "Renewal notices will be sent prior to the expiration of the membership."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/terms/page.js",
-                                lineNumber: 45,
+                                lineNumber: 46,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                 children: "Failure to make a valid payment will result in removal from the group."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/terms/page.js",
-                                lineNumber: 49,
+                                lineNumber: 50,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/terms/page.js",
-                        lineNumber: 38,
+                        lineNumber: 39,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/terms/page.js",
-                lineNumber: 36,
+                lineNumber: 37,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -164,7 +165,7 @@ const TermsAndConditions = ()=>{
                         children: "Eligibility"
                     }, void 0, false, {
                         fileName: "[project]/src/app/terms/page.js",
-                        lineNumber: 57,
+                        lineNumber: 58,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -174,33 +175,33 @@ const TermsAndConditions = ()=>{
                                 children: "You must be at least 18 years old to join the group."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/terms/page.js",
-                                lineNumber: 59,
+                                lineNumber: 60,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                 children: "Members must provide accurate personal information during registration."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/terms/page.js",
-                                lineNumber: 60,
+                                lineNumber: 61,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                 children: "Each member is entitled to one account, which is non-transferable."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/terms/page.js",
-                                lineNumber: 64,
+                                lineNumber: 65,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/terms/page.js",
-                        lineNumber: 58,
+                        lineNumber: 59,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/terms/page.js",
-                lineNumber: 56,
+                lineNumber: 57,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -211,7 +212,7 @@ const TermsAndConditions = ()=>{
                         children: "Group Conduct"
                     }, void 0, false, {
                         fileName: "[project]/src/app/terms/page.js",
-                        lineNumber: 71,
+                        lineNumber: 72,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -221,40 +222,40 @@ const TermsAndConditions = ()=>{
                                 children: "All posts and exchanges must be related to housing offers or requests."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/terms/page.js",
-                                lineNumber: 73,
+                                lineNumber: 74,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                 children: "Members must treat others respectfully and refrain from discriminatory, abusive, or offensive language."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/terms/page.js",
-                                lineNumber: 77,
+                                lineNumber: 78,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                 children: "Spam, unsolicited promotions, and irrelevant content are prohibited."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/terms/page.js",
-                                lineNumber: 81,
+                                lineNumber: 82,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                 children: "Members must comply with all local laws and may not engage in illegal activities, including but not limited to fraud, unauthorized transactions, or misuse of the group."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/terms/page.js",
-                                lineNumber: 84,
+                                lineNumber: 85,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/terms/page.js",
-                        lineNumber: 72,
+                        lineNumber: 73,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/terms/page.js",
-                lineNumber: 70,
+                lineNumber: 71,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -265,7 +266,7 @@ const TermsAndConditions = ()=>{
                         children: "Home Listings"
                     }, void 0, false, {
                         fileName: "[project]/src/app/terms/page.js",
-                        lineNumber: 93,
+                        lineNumber: 94,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -273,7 +274,7 @@ const TermsAndConditions = ()=>{
                         children: "Members are responsible for providing accurate and complete information about their homes, including the rental fee, location, duration, and any terms specific to the stay."
                     }, void 0, false, {
                         fileName: "[project]/src/app/terms/page.js",
-                        lineNumber: 94,
+                        lineNumber: 95,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -281,13 +282,13 @@ const TermsAndConditions = ()=>{
                         children: "The platform does not verify or endorse any listings. Members must perform due diligence before entering into any agreements."
                     }, void 0, false, {
                         fileName: "[project]/src/app/terms/page.js",
-                        lineNumber: 99,
+                        lineNumber: 100,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/terms/page.js",
-                lineNumber: 92,
+                lineNumber: 93,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -298,7 +299,7 @@ const TermsAndConditions = ()=>{
                         children: "Payments and Transactions"
                     }, void 0, false, {
                         fileName: "[project]/src/app/terms/page.js",
-                        lineNumber: 106,
+                        lineNumber: 107,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -306,19 +307,19 @@ const TermsAndConditions = ()=>{
                         children: "All financial transactions are made directly between the member offering the property and the member renting it. The group administrators are not involved in any payment process and cannot be held responsible for disputes."
                     }, void 0, false, {
                         fileName: "[project]/src/app/terms/page.js",
-                        lineNumber: 107,
+                        lineNumber: 108,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/terms/page.js",
-                lineNumber: 105,
+                lineNumber: 106,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/terms/page.js",
-        lineNumber: 9,
+        lineNumber: 10,
         columnNumber: 5
     }, this);
 };

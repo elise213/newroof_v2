@@ -1,7 +1,6 @@
 /* [project]/src/app/terms/termsandconditions.css [app-client] (css) */
 .terms-container {
   width: 100%;
-  max-width: 900px;
   margin: 0;
   border-radius: 10px;
   box-shadow: none;
@@ -55,12 +54,14 @@
   margin-bottom: 10px;
   font-family: Neutraface Text;
   font-size: 16px;
+  text-align: center;
 }
 
 .section-content {
-  font-size: 16px;
+  font-size: 14px;
   color: #333;
   line-height: 1.6;
+  text-align: justify;
 }
 
 .section-list {
@@ -68,9 +69,11 @@
 }
 
 .section-list li {
-  font-size: 16px;
+  font-size: 14px;
   color: #333;
   margin-bottom: 8px;
+  line-height: 1.6;
+  text-align: justify;
 }
 
 @media screen and (width <= 700px) {

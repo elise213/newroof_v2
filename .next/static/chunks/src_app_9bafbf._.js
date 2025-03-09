@@ -300,9 +300,17 @@ const Footer = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "footer-div-2",
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "footer-text",
-                        children: "RICKY'S HOMESHARING"
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        href: "/",
+                        passHref: true,
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            className: "footer-text",
+                            children: "RICKY'S HOMESHARING"
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/component/footer.js",
+                            lineNumber: 35,
+                            columnNumber: 9
+                        }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/component/footer.js",
                         lineNumber: 34,
@@ -316,7 +324,7 @@ const Footer = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$
                         children: "© 2025 Ricky's Homesharing, All Rights Reserved"
                     }, void 0, false, {
                         fileName: "[project]/src/app/component/footer.js",
-                        lineNumber: 36,
+                        lineNumber: 38,
                         columnNumber: 7
                     }, this)
                 ]

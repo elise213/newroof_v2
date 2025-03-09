@@ -56,10 +56,9 @@
 }
 
 :root {
-  --background: #fff;
-  --foreground: #171717;
   --color1: #cbf5c3;
   --color2: #ac8f45;
+  --color3: #d1ffc8;
 }
 
 html, body {
@@ -75,8 +74,6 @@ body {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
-  color: var(--foreground);
-  background: var(--background);
   font-family: Neutraface Text;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -176,7 +173,7 @@ main {
 }
 
 .pulse-cart {
-  animation: 1.5s ease-in-out infinite pulseCart;
+  animation: 2s ease-in-out infinite pulseCart;
 }
 
 .terms-link {
@@ -191,7 +188,7 @@ main {
   }
 
   50% {
-    transform: scale(1.2);
+    transform: scale(1.15);
     text-shadow: 10px 10px 30px #000c;
   }
 
@@ -230,14 +227,16 @@ main {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  border: none;
+  background-color: #0000;
+  font-size: 12px;
   font-family: Neutraface Text;
+  transition: color 1.5s ease-in-out, opacity 1.5s ease-in-out;
+  opacity: 1;
   color: var(--color2) !important;
-  background-color: #0000 !important;
-  font-size: 12px !important;
 }
 
 .backButton:hover {
+  background-color: #0000;
   color: var(--color1) !important;
 }
 
@@ -287,7 +286,7 @@ main {
   align-items: flex-start;
 }
 
-.addToCart, .remove, .proceed {
+.remove, .proceed {
   cursor: pointer;
   font-size: 12px;
   width: 100%;
@@ -318,7 +317,7 @@ main {
   border: 1px solid var(--color2);
   align-self: center;
   padding: 3px;
-  color: #8b4513;
+  color: var(--color2);
   width: unset;
   justify-self: flex-start;
   align-self: flex-end;
@@ -326,13 +325,16 @@ main {
   font-family: Neutraface Text;
   transition: background-color 1s, transform .3s ease-in-out;
   animation: 2s ease-in-out infinite pulse;
-  width: 100%;
+  width: 95%;
   box-sizing: border-box;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 4px;
 }
 
 .addToCart:hover {
   transition: background-color 1s, transform .3s ease-in-out;
-  background-color: #c6ffbb !important;
+  background-color: var(--color3) !important;
 }
 
 @keyframes pulse {
@@ -341,7 +343,7 @@ main {
     box-shadow: 0 0 5px #8b451333;
   }
 
-  50% {
+  65% {
     transform: scale(1.03);
     box-shadow: 0 0 10px #8b45134d;
   }
@@ -457,7 +459,6 @@ main {
   padding-top: 10px;
   justify-content: space-between;
   display: flex;
-  color: red;
   font-family: Neutraface Text;
   font-size: 14px;
 }
@@ -600,30 +601,6 @@ main {
   background-color: #fff;
 }
 
-.go-to-cart {
-  background-color: #dcb75a;
-  color: #fff;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 5px;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  box-shadow: 0 4px 10px #0006;
-  transition: all .3s ease-in-out;
-  animation: 1.8s ease-in-out infinite pulse;
-  width: 150px;
-  position: absolute;
-  right: 50px;
-  top: 0;
-}
-
-.go-to-cart:hover {
-  background-color: #c5a450;
-  box-shadow: 0 6px 15px #0009;
-  transform: scale(1.05);
-}
-
 .termsDiv {
   display: flex;
   margin-top: 40px;
@@ -655,7 +632,7 @@ main {
     box-shadow: 0 4px 10px #0006;
   }
 
-  50% {
+  60% {
     transform: scale(1.07);
     box-shadow: 0 6px 15px #0009;
   }

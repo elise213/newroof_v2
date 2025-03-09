@@ -97,10 +97,10 @@ const Checkout = () => {
 
               <div className="total-div">
                 <span> Billed Annually</span>
-                <span className="total">Total: ${totalAmount}</span>
+                <span className="total" style={{ color: "red" }}>
+                  Total: ${totalAmount}
+                </span>
               </div>
-
-              {/* Terms Agreement */}
               <div className="termsDiv">
                 <input
                   type="checkbox"
@@ -123,7 +123,6 @@ const Checkout = () => {
                 <button
                   className="addToCart"
                   style={{
-                    borderRadius: "4px",
                     margin: "13px 0",
                     alignSelf: "center",
                   }}
